@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#d4af37" />
+  <meta name="description" content="Pocket Sutra — chant and recite the Mi Le, Heart, and Bai Xiao sutras with a counter, session log, and cumulative total." />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" type="image/png" href="icon-192.png" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Pocket Sutra" />
+  <title>Pocket Sutra</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app" data-theme="dark">
+    <header class="header">
+      <div class="header-top">
+        <div class="title-wrap">
+          <h1>Pocket Sutra</h1>
+          <p class="subtitle">彌勒救苦真經 · 心經 · 百孝經</p>
+        </div>
+        <button class="lang-btn" id="langBtn" aria-label="Toggle language">ID</button>
+      </div>
+      <button class="install-btn" id="installBtn" style="display:none;"></button>
+      <section class="cumulative">
+        <span class="cumulative-label" data-i18n="allTime">All-time Recitations</span>
+        <span class="cumulative-value" id="cumulativeTotal">0</span>
+      </section>
+    </header>
+
+    <nav class="sutra-tabs" id="sutraTabs">
+      <button class="sutra-tab active" data-sutra="heart">
+        <span class="t-han">心經</span><span class="t-sub">Heart</span>
+      </button>
+      <button class="sutra-tab" data-sutra="mile">
+        <span class="t-han">彌勒</span><span class="t-sub">Mi Le</span>
+      </button>
+      <button class="sutra-tab" data-sutra="baixiao">
+        <span class="t-han">百孝</span><span class="t-sub">Bai Xiao</span>
+      </button>
+    </nav>
+
+    <div class="toolbar">
+      <div class="font-controls">
+        <button class="tool-btn" id="fontMinus" aria-label="Decrease font size">A−</button>
+        <button class="tool-btn" id="fontPlus" aria-label="Increase font size">A+</button>
+      </div>
+      <button class="tool-btn" id="themeBtn" aria-label="Toggle dark mode" title="Theme">🌙</button>
+      <button class="tool-btn" id="viewBtn" aria-label="Toggle view options">
+        <span aria-hidden="true">☰</span> <span data-i18n="view">View</span>
+      </button>
+    </div>
+
+    <div class="view-panel" id="viewPanel" hidden>
+      <div class="panel-row">
+        <span class="panel-label" data-i18n="show">Show</span>
+        <div class="toggle-group">
+          <button class="chip active" data-line="hanzi" data-i18n="hanzi">Hanzi</button>
+          <button class="chip active" data-line="pinyin" data-i18n="pinyin">Pinyin</button>
+          <button class="chip active" data-line="lafal" data-i18n="lafal">Lafal</button>
+          <button class="chip active" data-line="meaning" data-i18n="meaning">Meaning</button>
+        </div>
+      </div>
+      <div class="panel-row">
+        <span class="panel-label" data-i18n="scrollSpeed">Auto-scroll speed</span>
+        <input type="range" id="speedRange" min="1" max="5" step="1" value="2" />
+        <span class="panel-value" id="speedValue">2</span>
+      </div>
+      <div class="panel-row">
+        <span class="panel-label" data-i18n="haptics">Haptic feedback</span>
+        <input type="checkbox" id="hapticToggle" checked />
+      </div>
+    </div>
+
+    <main class="reader" id="reader">
+      <h2 id="sutraTitle" class="sutra-title"></h2>
+      <p id="sutraSubtitle" class="sutra-subtitle"></p>
+      <div id="sutraBody" class="sutra-body"></div>
+    </main>
+
+    <footer class="bottom-nav">
+      <button class="nav-btn" id="autoScrollBtn" aria-label="Toggle auto-scroll">
+        <span class="nav-icon" id="autoScrollIcon">▶</span>
+        <span class="nav-label" data-i18n="autoScroll">Auto-Scroll</span>
+      </button>
+      <div class="counter-display">
+        <span class="counter-label" data-i18n="counter">Counter</span>
+        <span class="counter-value" id="counterValue">000</span>
+        <div class="counter-mini">
+          <button class="mini-btn" id="undoBtn" data-i18n="undo" title="Undo">Undo</button>
+          <button class="mini-btn" id="resetBtn" data-i18n="reset" title="Reset">Reset</button>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <button class="nav-btn" id="saveSessionBtn" data-i18n="save">Save</button>
+        <button class="nav-btn" id="viewLogBtn" data-i18n="log">Log</button>
+      </div>
+    </footer>
+
+    <button class="fab" id="tapBtn" aria-label="Tap to count recitation">
+      <span class="fab-count" id="tapCount">0</span>
+      <span class="fab-hint" data-i18n="tap">Tap</span>
+    </button>
+  </div>
+
+  <!-- Session Log Modal -->
+  <div class="modal" id="logModal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 data-i18n="log">Session Log</h2>
+        <button class="close-btn" id="closeLogBtn" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body" id="logList"></div>
+      <div class="modal-foot">
+        <button class="footer-btn danger" id="clearLogBtn" data-i18n="clearAll">Clear All</button>
+        <button class="footer-btn" id="closeLogBtn2" data-i18n="close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Save Session Modal -->
+  <div class="modal" id="saveModal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 data-i18n="saveTitle">Save Session</h2>
+        <button class="close-btn" id="closeSaveBtn" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <p class="save-summary" data-i18n="saveSummary">This session</p>
+        <p class="save-value" id="saveValue">0</p>
+        <textarea id="noteInput" placeholder="Catatan opsional... (Optional note...)" rows="4"></textarea>
+      </div>
+      <div class="modal-foot">
+        <button class="footer-btn" id="cancelSaveBtn" data-i18n="cancel">Cancel</button>
+        <button class="footer-btn primary" id="confirmSaveBtn" data-i18n="saveConfirm">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
