@@ -720,6 +720,52 @@ textarea:focus {
   user-select: text;
 }
 
+.hx-title {
+  text-align: center;
+  font-family: "Noto Serif CJK SC", "SimSun", serif;
+  font-size: 1.3rem;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.hx-subtitle {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.hx-col {
+  margin: 16px 0 8px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold-light);
+  text-align: center;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+.hx-item {
+  margin-bottom: 10px;
+}
+
+.hx-h {
+  font-family: "Noto Serif CJK SC", "SimSun", serif;
+  letter-spacing: 0.2em;
+  color: var(--text);
+  font-size: 1.05rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.hx-l {
+  color: var(--gold-light);
+  font-size: 0.85rem;
+  text-align: center;
+  font-style: italic;
+}
+
 @media (max-width: 400px) {
   .counter-value {
     font-size: 1.5rem;
