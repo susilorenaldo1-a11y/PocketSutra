@@ -694,22 +694,45 @@ textarea:focus {
   padding: 30px 0;
 }
 
-/* Menu / About / Hui Xiang */
-.menu-body {
-  line-height: 1.6;
+/* Menu / About / Hui Xiang / Changelog */
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 18px;
 }
 
-.menu-heading {
+.menu-item {
+  background: var(--surface-2);
+  color: var(--gold-light);
+  border: 1px solid var(--border-strong);
+  border-radius: 14px;
+  padding: 16px;
   font-size: 1rem;
-  color: var(--gold);
-  margin-bottom: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s;
+}
+
+.menu-item:active {
+  background: var(--gold);
+  color: #2b1d05;
+}
+
+.menu-version {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-muted);
   letter-spacing: 1px;
+  margin-top: 4px;
 }
 
 .about-text {
   color: var(--text);
   font-size: 0.9rem;
-  margin-bottom: 20px;
+  line-height: 1.7;
+  user-select: text;
 }
 
 .huixiang-text {
@@ -718,6 +741,28 @@ textarea:focus {
   white-space: pre-wrap;
   line-height: 1.9;
   user-select: text;
+}
+
+.cl-entry {
+  margin-bottom: 18px;
+}
+
+.cl-version {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 6px;
+}
+
+.cl-list {
+  margin-left: 18px;
+  color: var(--text);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.cl-list li {
+  margin-bottom: 4px;
 }
 
 .hx-title {

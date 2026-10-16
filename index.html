@@ -148,14 +148,55 @@
         <h2 data-i18n="menu">Menu</h2>
         <button class="close-btn" id="closeMenuBtn" aria-label="Close">✕</button>
       </div>
-      <div class="modal-body menu-body">
-        <h3 class="menu-heading" data-i18n="about">About</h3>
+      <div class="modal-body menu-list">
+        <button class="menu-item" data-page="about"><span data-i18n="about">About</span></button>
+        <button class="menu-item" data-page="huixiang"><span data-i18n="huixiang">Hui Xiang</span></button>
+        <button class="menu-item" data-page="changelog"><span data-i18n="changelog">Version History</span></button>
+        <p class="menu-version" id="menuVersion"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Modal -->
+  <div class="modal" id="aboutModal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 data-i18n="about">About</h2>
+        <button class="close-btn" id="closeAboutBtn" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
         <p class="about-text" data-i18n="aboutBody"></p>
-        <h3 class="menu-heading" data-i18n="huixiang">Hui Xiang</h3>
-        <div class="huixiang-text" id="huixiangBody"></div>
       </div>
       <div class="modal-foot">
-        <button class="footer-btn" id="closeMenuBtn2" data-i18n="close">Close</button>
+        <button class="footer-btn" id="closeAboutBtn2" data-i18n="close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hui Xiang Modal -->
+  <div class="modal" id="huixiangModal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 data-i18n="huixiang">Hui Xiang</h2>
+        <button class="close-btn" id="closeHuixiangBtn" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body huixiang-text" id="huixiangBody"></div>
+      <div class="modal-foot">
+        <button class="footer-btn" id="closeHuixiangBtn2" data-i18n="close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Changelog Modal -->
+  <div class="modal" id="changelogModal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 data-i18n="changelog">Version History</h2>
+        <button class="close-btn" id="closeChangelogBtn" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body" id="changelogBody"></div>
+      <div class="modal-foot">
+        <button class="footer-btn" id="closeChangelogBtn2" data-i18n="close">Close</button>
       </div>
     </div>
   </div>

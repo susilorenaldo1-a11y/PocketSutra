@@ -6,24 +6,24 @@ const SUTRAS = {
     titlePinyin: 'bō rě bō luó mì duō xīn jīng',
     titleMeaning: 'Sutra Hati Prajnaparamita',
     verses: [
-      { h: '觀自在菩薩 行深般若波羅蜜多時', p: 'guān zì zài pú sà, xíng shēn bō rě bō luó mì duō shí', l: 'Kuan Ce Cai Phu Sa, Heng Cim Po Jia Po Lo Mit To Si', m: 'Ketika Yang Mulia Bodhisattva Avalokitesvara mempraktikkan Prajna Paramita secara tekun dan mendalam.' },
-      { h: '照見五蘊皆空 度一切苦厄 舍利子', p: 'zhào jiàn wǔ yùn jiē kōng, dù yī qiè kǔ è, shè lì zǐ', l: '', m: 'Beliau mengerti secara hakiki bahwa panca skandha manusia senantiasa berubah. Dengan pencerahan demikian Beliau dapat mengatasi semua penderitaan. Oh, Sariputra!' },
-      { h: '色不異空 空不異色 色即是空 空即是色', p: 'sè bù yì kōng, kōng bù yì sè, sè jí shì kōng, kōng jí shì sè', l: '', m: 'Setiap benda/rupa adalah identik dengan sifat kesunyataan. Sebaliknya sifat kesunyataan ini identik dengan benda/rupa yang relevan dengannya. Semua benda/rupa adalah perwujudan dari sifat kesunyataan, sifat kesunyataan senantiasa menyertai benda/rupanya.' },
-      { h: '受想行識 亦復如是 舍利子 是諸法空相', p: 'shòu xiǎng xíng shí, yì fù rú shì, shè lì zǐ, shì zhū fǎ kōng xiàng', l: '', m: 'Demikian pula yang terjadi dengan vedana (perasaan), samjna (pikiran), samskara (karsa), dan vijnana (kesadaran). Oh, Sariputra! Kesunyataan dari seisi alam semesta' },
-      { h: '不生不滅 不垢不淨 不增不減', p: 'bù shēng bù miè, bù gòu bù jìng, bù zēng bù jiǎn', l: '', m: 'adalah tiada kelahiran dan kematian, tiada pertentangan yang awam dan suci, tiada penambahan dan pengurangan dalam kondisi apa pun.' },
-      { h: '是故空中無色 無受想行識', p: 'shì gù kōng zhōng wú sè, wú shòu xiǎng xíng shí', l: '', m: 'Oleh karena itu, di dalam kesunyataan tiada perwujudan, tiada permainan perasaan, percerapan, tindakan, alam bawah kesadaran' },
-      { h: '無眼耳鼻舌身意 無色聲香味觸法', p: 'wú yǎn ěr bí shé shēn yì, wú sè shēng xiāng wèi chù fǎ', l: '', m: 'tiada godaan mata, telinga, hidung, lidah, jasmani, dan pikiran. Tiada terpikat oleh objek penglihatan, pendengaran, penciuman, cita rasa, sentuhan.' },
-      { h: '無眼界 乃至無意識界', p: 'wú yǎn jiè, nǎi zhì wú yì shí jiè', l: '', m: 'Tiada batas pandangan, tiada batas alam bawah kesadaran.' },
-      { h: '無無明 亦無無明盡 乃至無老死 亦無老死盡', p: 'wú wú míng, yì wú wú míng jìn, nǎi zhì wú lǎo sǐ, yì wú lǎo sǐ jìn', l: '', m: 'Tiada avidya/kegelapan batin, tiada lenyapnya kegelapan batin, tiada usia tua dan kematian, sampai akhir dari usia tua dan kematian.' },
-      { h: '無苦集滅道 無智亦無得', p: 'wú kǔ jí miè dào, wú zhì yì wú dé', l: '', m: 'Tiada derita, asal mula derita, akhir derita, dan jalan pencerahan; tiada kebijaksanaan, tiada pencapaian.' },
-      { h: '以無所得故 菩提薩埵 依般若波羅蜜多故', p: 'yǐ wú suǒ dé gù, pú tí sà duǒ, yī bō rě bō luó mì duō gù', l: '', m: 'Sesungguhnya, tiada sesuatu yang dicapai, oleh karena pengertian ini, maka Sang Bodhisattva melatih dirinya mengikuti Prajna Paramita.' },
-      { h: '心無罣礙 無罣礙故 無有恐怖 遠離顛倒夢想', p: 'xīn wú guà ài, wú guà ài gù, wú yǒu kǒng bù, yuǎn lí diān dǎo mèng xiǎng', l: '', m: 'Jika hati terbebas, tiada beban pikiran, maka tidak akan rasa ketakutan, menjauhi cara berpikir irasional atau berkhayalan' },
-      { h: '究竟涅槃 三世諸佛 依般若波羅蜜多故', p: 'jiū jìng niè pán, sān shì zhū fó, yī bō rě bō luó mì duō gù', l: '', m: 'dan berakhir mencapai nirvana. Semua Hyang Buddha pada waktu dahulu, sekarang dan mendatang, karena telah mempraktikkan Prajna Paramita,' },
-      { h: '得阿耨多羅三藐三菩提 故知般若波羅蜜多', p: 'dé ā nòu duō luó sān miǎo sān pú tí, gù zhī bō rě bō luó mì duō', l: '', m: 'maka mencapai Anuttara Samyaksambuddha (pencerahan sempurna). Karena itu, Prajna Paramita sudah jelas merupakan maha mantra sakti,' },
-      { h: '是大神咒 是大明咒 是無上咒 是無等等咒', p: 'shì dà shén zhòu, shì dà míng zhòu, shì wú shàng zhòu, shì wú děng děng zhòu', l: '', m: 'maha mantra pencerahan, mantra yang teragung, mantra tanpa bandingan' },
-      { h: '能除一切苦 真實不虛 故說般若波羅蜜多咒', p: 'néng chú yī qiè kǔ, zhēn shí bù xū, gù shuō bō rě bō luó mì duō zhòu', l: '', m: 'yang dapat melenyapkan segala penderitaan; sungguh benar dan tidak palsu. Karenanya, mari kita melafal dan mengamalkan mantra Prajna Paramita' },
-      { h: '即說咒曰 揭諦揭諦 波羅揭諦', p: 'jí shuō zhòu yuē, jiē dì jiē dì, bō luó jiē dì', l: '', m: 'seperti ini; Pergilah pergilah, melewati semua dukkha,' },
-      { h: '波羅僧揭諦 菩提薩婆訶', p: 'bō luó sēng jiē dì, pú tí sà pó hē', l: '', m: 'bersama-sama menyeberangi mencapai pencerahan.' },
+      { h: '觀自在菩薩 行深般若波羅蜜多時', p: 'guān zì zài pú sà, xíng shēn bō rě bō luó mì duō shí', l: 'Kuan Ce Cai Phu Sa Sing Sen Po Re Po Lo Mi Tuo Se', m: 'Ketika Yang Mulia Bodhisattva Avalokitesvara mempraktikkan Prajna Paramita secara tekun dan mendalam.' },
+      { h: '照見五蘊皆空 度一切苦厄 舍利子', p: 'zhào jiàn wǔ yùn jiē kōng, dù yī qiè kǔ è, shè lì zǐ', l: 'Cao Cien Wu Yin Cie Khong, Tu Yi Cie Khu Ee, She Li Ce', m: 'Beliau mengerti secara hakiki bahwa panca skandha manusia senantiasa berubah. Dengan pencerahan demikian Beliau dapat mengatasi semua penderitaan. Oh, Sariputra!' },
+      { h: '色不異空 空不異色 色即是空 空即是色', p: 'sè bù yì kōng, kōng bù yì sè, sè jí shì kōng, kōng jí shì sè', l: 'She Pu Yi Khong Khong Pu Yi She, She Ci Se Khong, Khong Ci She Se', m: 'Setiap benda/rupa adalah identik dengan sifat kesunyataan. Sebaliknya sifat kesunyataan ini identik dengan benda/rupa yang relevan dengannya. Semua benda/rupa adalah perwujudan dari sifat kesunyataan, sifat kesunyataan senantiasa menyertai benda/rupanya.' },
+      { h: '受想行識 亦復如是 舍利子 是諸法空相', p: 'shòu xiǎng xíng shí, yì fù rú shì, shè lì zǐ, shì zhū fǎ kōng xiàng', l: 'Shou Siang Sing She, Yi Fu Ru She, She Li Ce, She Cu Fa Khong Siang', m: 'Demikian pula yang terjadi dengan vedana (perasaan), samjna (pikiran), samskara (karsa), dan vijnana (kesadaran). Oh, Sariputra! Kesunyataan dari seisi alam semesta' },
+      { h: '不生不滅 不垢不淨 不增不減', p: 'bù shēng bù miè, bù gòu bù jìng, bù zēng bù jiǎn', l: 'Pu Sheng Pu Mie, Pu Kou Pu Cing, Pu Cen Pu Cien', m: 'adalah tiada kelahiran dan kematian, tiada pertentangan yang awam dan suci, tiada penambahan dan pengurangan dalam kondisi apa pun.' },
+      { h: '是故空中無色 無受想行識', p: 'shì gù kōng zhōng wú sè, wú shòu xiǎng xíng shí', l: 'She Ku Khong Cong Wu Se, Wu Shou Siang Sing She', m: 'Oleh karena itu, di dalam kesunyataan tiada perwujudan, tiada permainan perasaan, percerapan, tindakan, alam bawah kesadaran' },
+      { h: '無眼耳鼻舌身意 無色聲香味觸法', p: 'wú yǎn ěr bí shé shēn yì, wú sè shēng xiāng wèi chù fǎ', l: 'Wu Yen Erl Pi She Shen Yi, Wu Se Sheng Siang Wei Chu Fa', m: 'tiada godaan mata, telinga, hidung, lidah, jasmani, dan pikiran. Tiada terpikat oleh objek penglihatan, pendengaran, penciuman, cita rasa, sentuhan.' },
+      { h: '無眼界 乃至無意識界', p: 'wú yǎn jiè, nǎi zhì wú yì shí jiè', l: 'Wu Yen Cie, Nai Ce Wu Yi She Cie', m: 'Tiada batas pandangan, tiada batas alam bawah kesadaran.' },
+      { h: '無無明 亦無無明盡 乃至無老死 亦無老死盡', p: 'wú wú míng, yì wú wú míng jìn, nǎi zhì wú lǎo sǐ, yì wú lǎo sǐ jìn', l: 'Wu Wu Ming Yi Wu Wu Ming Cin, Nai Ce Wu Lao Se, Yi Wu Lao Se Cin', m: 'Tiada avidya/kegelapan batin, tiada lenyapnya kegelapan batin, tiada usia tua dan kematian, sampai akhir dari usia tua dan kematian.' },
+      { h: '無苦集滅道 無智亦無得', p: 'wú kǔ jí miè dào, wú zhì yì wú dé', l: 'Wu Khu Ci Mie Tao, Wu Ce Yi Wu Te', m: 'Tiada derita, asal mula derita, akhir derita, dan jalan pencerahan; tiada kebijaksanaan, tiada pencapaian.' },
+      { h: '以無所得故 菩提薩埵 依般若波羅蜜多故', p: 'yǐ wú suǒ dé gù, pú tí sà duǒ, yī bō rě bō luó mì duō gù', l: 'Yi Wu Suo Te Ku, Phu Thi Sa Tuo, Yi Po Re Po Luo Mi Tuo Ku', m: 'Sesungguhnya, tiada sesuatu yang dicapai, oleh karena pengertian ini, maka Sang Bodhisattva melatih dirinya mengikuti Prajna Paramita.' },
+      { h: '心無罣礙 無罣礙故 無有恐怖 遠離顛倒夢想', p: 'xīn wú guà ài, wú guà ài gù, wú yǒu kǒng bù, yuǎn lí diān dǎo mèng xiǎng', l: 'Sin Wu Kua Ai, Wu Kua Ai Ku, Wu You Khong Pu, Yuen Li Tien Tao Meng Siang', m: 'Jika hati terbebas, tiada beban pikiran, maka tidak akan rasa ketakutan, menjauhi cara berpikir irasional atau berkhayalan' },
+      { h: '究竟涅槃 三世諸佛 依般若波羅蜜多故', p: 'jiū jìng niè pán, sān shì zhū fó, yī bō rě bō luó mì duō gù', l: 'Ciu Cing Nie Phan, San She Cu Fo, Yi Po Re Po Luo Mie Tuo Ku', m: 'dan berakhir mencapai nirvana. Semua Hyang Buddha pada waktu dahulu, sekarang dan mendatang, karena telah mempraktikkan Prajna Paramita,' },
+      { h: '得阿耨多羅三藐三菩提 故知般若波羅蜜多', p: 'dé ā nòu duō luó sān miǎo sān pú tí, gù zhī bō rě bō luó mì duō', l: 'Te E Nou Tuo Luo San Miao San Phu Thi, Ku Ce Po Re Po Luo Mi Tuo', m: 'maka mencapai Anuttara Samyaksambuddha (pencerahan sempurna). Karena itu, Prajna Paramita sudah jelas merupakan maha mantra sakti,' },
+      { h: '是大神咒 是大明咒 是無上咒 是無等等咒', p: 'shì dà shén zhòu, shì dà míng zhòu, shì wú shàng zhòu, shì wú děng děng zhòu', l: 'She Ta Shen Cou, She Ta Ming Cou, She Wu Shang Cou, She Wu Teng Teng Cou', m: 'maha mantra pencerahan, mantra yang teragung, mantra tanpa bandingan' },
+      { h: '能除一切苦 真實不虛 故說般若波羅蜜多咒', p: 'néng chú yī qiè kǔ, zhēn shí bù xū, gù shuō bō rě bō luó mì duō zhòu', l: 'Neng Chu Yi Chie Khu, Cen She Pu Sii, Ku Shuo Po Re Po Luo Mi Tuo Cou', m: 'yang dapat melenyapkan segala penderitaan; sungguh benar dan tidak palsu. Karenanya, mari kita melafal dan mengamalkan mantra Prajna Paramita' },
+      { h: '即說咒曰 揭諦揭諦 波羅揭諦', p: 'jí shuō zhòu yuē, jiē dì jiē dì, bō luó jiē dì', l: 'Ci Shuo Cou Yue: Cie Ti Cie Ti, Po Luo Cie Ti', m: 'seperti ini; Pergilah pergilah, melewati semua dukkha,' },
+      { h: '波羅僧揭諦 菩提薩婆訶', p: 'bō luó sēng jiē dì, pú tí sà pó hē', l: 'Po Luo Seng Cie Ti, Phu Thi Sa Pho He', m: 'bersama-sama menyeberangi mencapai pencerahan.' },
       { h: '般若波羅蜜多心經', p: 'bō rě bō luó mì duō xīn jīng', l: '', m: 'Sutra Hati Prajnaparamita.' }
     ]
   },
@@ -251,6 +251,25 @@ const HUIXIANG = {
   ]
 };
 
+const APP_VERSION = '1.1';
+
+const CHANGELOG = [
+  {
+    version: '1.1',
+    changes: [
+      'Menyempurnakan lafal Hokkien Sutra Hati (Heart Sutra).',
+      'Menu burger kini memisahkan About, Hui Xiang, dan Riwayat Versi ke halaman tersendiri.'
+    ]
+  },
+  {
+    version: '1.0',
+    changes: [
+      'Rilis perdana dengan tiga parita: Mi Le Jiu Ku Zhen Jing, Heart Sutra, dan Bai Xiao Jing.',
+      'Penghitung digital, riwayat sesi, auto-scroll, dan mode tampilan.'
+    ]
+  }
+];
+
 const I18N = {
   en: {
     allTime: 'All-time Recitations',
@@ -280,6 +299,7 @@ const I18N = {
     menu: 'Menu',
     about: 'About',
     huixiang: 'Hui Xiang',
+    changelog: 'Version History',
     rightColumn: 'Right Column',
     closingVerse: 'Dedication',
     aboutBody: 'Pocket Sutra is a simple companion for chanting the Mi Le Jiu Ku Zhen Jing (彌勒救苦真經), the Heart Sutra (般若波羅蜜多心經), and the Bai Xiao Jing (百孝經). It includes Hanzi, Pinyin, Lafal, and translation, plus a digital counter and session log.'
@@ -312,6 +332,7 @@ const I18N = {
     menu: 'Menu',
     about: 'Tentang',
     huixiang: 'Hui Xiang',
+    changelog: 'Riwayat Versi',
     rightColumn: 'Kolom Kanan',
     closingVerse: 'Pelimpahan',
     aboutBody: 'Pocket Sutra adalah pendamping sederhana untuk melafalkan Mi Le Jiu Ku Zhen Jing (彌勒救苦真經), Sutra Hati (般若波羅蜜多心經), dan Bai Xiao Jing (百孝經). Menyajikan Hanzi, Pinyin, Lafal, dan terjemahan, dilengkapi penghitung digital dan riwayat sesi.'
@@ -481,6 +502,19 @@ function renderHuixiang() {
   el.innerHTML = html;
 }
 
+function renderChangelog() {
+  const el = document.getElementById('changelogBody');
+  document.getElementById('menuVersion').textContent = 'v' + APP_VERSION;
+  el.innerHTML = CHANGELOG.map((entry) => {
+    const items = entry.changes.map((c) => `<li>${escapeHtml(c)}</li>`).join('');
+    return `
+      <div class="cl-entry">
+        <div class="cl-version">v${escapeHtml(entry.version)}</div>
+        <ul class="cl-list">${items}</ul>
+      </div>`;
+  }).join('');
+}
+
 function renderLog() {
   const list = document.getElementById('logList');
   if (state.logs.length === 0) {
@@ -560,6 +594,7 @@ function init() {
   applyTheme();
   renderAll();
   renderHuixiang();
+  renderChangelog();
   updateAutoScrollBtn();
 
   document.getElementById('tapBtn').addEventListener('click', () => {
@@ -690,7 +725,23 @@ function init() {
 
   document.getElementById('menuBtn').addEventListener('click', () => openModal('menuModal'));
   document.getElementById('closeMenuBtn').addEventListener('click', () => closeModal('menuModal'));
-  document.getElementById('closeMenuBtn2').addEventListener('click', () => closeModal('menuModal'));
+
+  document.querySelectorAll('.menu-item').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const page = btn.dataset.page;
+      closeModal('menuModal');
+      if (page === 'about') openModal('aboutModal');
+      else if (page === 'huixiang') openModal('huixiangModal');
+      else if (page === 'changelog') openModal('changelogModal');
+    });
+  });
+
+  document.getElementById('closeAboutBtn').addEventListener('click', () => closeModal('aboutModal'));
+  document.getElementById('closeAboutBtn2').addEventListener('click', () => closeModal('aboutModal'));
+  document.getElementById('closeHuixiangBtn').addEventListener('click', () => closeModal('huixiangModal'));
+  document.getElementById('closeHuixiangBtn2').addEventListener('click', () => closeModal('huixiangModal'));
+  document.getElementById('closeChangelogBtn').addEventListener('click', () => closeModal('changelogModal'));
+  document.getElementById('closeChangelogBtn2').addEventListener('click', () => closeModal('changelogModal'));
 
   document.getElementById('clearLogBtn').addEventListener('click', () => {
     state.logs = [];
