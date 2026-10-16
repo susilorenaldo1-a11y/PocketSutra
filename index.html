@@ -16,16 +16,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="app" data-theme="dark">
+  <div class="app">
     <header class="header">
       <div class="header-top">
+        <button class="icon-btn" id="menuBtn" aria-label="Menu">☰</button>
         <div class="title-wrap">
           <h1>Pocket Sutra</h1>
           <p class="subtitle">彌勒救苦真經 · 心經 · 百孝經</p>
         </div>
-        <button class="lang-btn" id="langBtn" aria-label="Toggle language">ID</button>
+        <button class="icon-btn" id="langBtn" aria-label="Toggle language">ID</button>
       </div>
-      <button class="install-btn" id="installBtn" style="display:none;"></button>
+      <button class="install-btn" id="installBtn" data-i18n="install" style="display:none;"></button>
       <section class="cumulative">
         <span class="cumulative-label" data-i18n="allTime">All-time Recitations</span>
         <span class="cumulative-value" id="cumulativeTotal">0</span>
@@ -34,13 +35,13 @@
 
     <nav class="sutra-tabs" id="sutraTabs">
       <button class="sutra-tab active" data-sutra="heart">
-        <span class="t-han">心經</span><span class="t-sub">Heart</span>
+        <span class="t-han">般若波羅蜜多心經</span><span class="t-sub">Heart Sutra</span>
       </button>
       <button class="sutra-tab" data-sutra="mile">
-        <span class="t-han">彌勒</span><span class="t-sub">Mi Le</span>
+        <span class="t-han">彌勒救苦真經</span><span class="t-sub">Mi Le Jiu Ku Zhen Jing</span>
       </button>
       <button class="sutra-tab" data-sutra="baixiao">
-        <span class="t-han">百孝</span><span class="t-sub">Bai Xiao</span>
+        <span class="t-han">百孝經</span><span class="t-sub">Bai Xiao Jing</span>
       </button>
     </nav>
 
@@ -49,9 +50,12 @@
         <button class="tool-btn" id="fontMinus" aria-label="Decrease font size">A−</button>
         <button class="tool-btn" id="fontPlus" aria-label="Increase font size">A+</button>
       </div>
+      <button class="tool-btn" id="autoScrollBtn" aria-label="Toggle auto-scroll">
+        <span aria-hidden="true" id="autoScrollIcon">▶</span> <span data-i18n="autoScroll">Auto-Scroll</span>
+      </button>
       <button class="tool-btn" id="themeBtn" aria-label="Toggle dark mode" title="Theme">🌙</button>
       <button class="tool-btn" id="viewBtn" aria-label="Toggle view options">
-        <span aria-hidden="true">☰</span> <span data-i18n="view">View</span>
+        <span aria-hidden="true">⚙</span> <span data-i18n="view">View</span>
       </button>
     </div>
 
@@ -83,10 +87,6 @@
     </main>
 
     <footer class="bottom-nav">
-      <button class="nav-btn" id="autoScrollBtn" aria-label="Toggle auto-scroll">
-        <span class="nav-icon" id="autoScrollIcon">▶</span>
-        <span class="nav-label" data-i18n="autoScroll">Auto-Scroll</span>
-      </button>
       <div class="counter-display">
         <span class="counter-label" data-i18n="counter">Counter</span>
         <span class="counter-value" id="counterValue">000</span>
@@ -137,6 +137,25 @@
       <div class="modal-foot">
         <button class="footer-btn" id="cancelSaveBtn" data-i18n="cancel">Cancel</button>
         <button class="footer-btn primary" id="confirmSaveBtn" data-i18n="saveConfirm">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu Modal -->
+  <div class="modal" id="menuModal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 data-i18n="menu">Menu</h2>
+        <button class="close-btn" id="closeMenuBtn" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body menu-body">
+        <h3 class="menu-heading" data-i18n="about">About</h3>
+        <p class="about-text" data-i18n="aboutBody"></p>
+        <h3 class="menu-heading" data-i18n="huixiang">Hui Xiang</h3>
+        <div class="huixiang-text" id="huixiangBody">(Teks pelimpahan jasa pahala akan diisi.)</div>
+      </div>
+      <div class="modal-foot">
+        <button class="footer-btn" id="closeMenuBtn2" data-i18n="close">Close</button>
       </div>
     </div>
   </div>

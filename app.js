@@ -230,7 +230,11 @@ const I18N = {
     saveConfirm: 'Save',
     clearAll: 'Clear All',
     close: 'Close',
-    emptyLog: 'No sessions logged yet.'
+    emptyLog: 'No sessions logged yet.',
+    menu: 'Menu',
+    about: 'About',
+    huixiang: 'Hui Xiang',
+    aboutBody: 'Pocket Sutra is a simple companion for chanting the Mi Le Jiu Ku Zhen Jing (彌勒救苦真經), the Heart Sutra (般若波羅蜜多心經), and the Bai Xiao Jing (百孝經). It includes Hanzi, Pinyin, Lafal, and translation, plus a digital counter and session log.'
   },
   id: {
     allTime: 'Jumlah Semua Waktu',
@@ -256,7 +260,11 @@ const I18N = {
     saveConfirm: 'Simpan',
     clearAll: 'Hapus Semua',
     close: 'Tutup',
-    emptyLog: 'Belum ada sesi tersimpan.'
+    emptyLog: 'Belum ada sesi tersimpan.',
+    menu: 'Menu',
+    about: 'Tentang',
+    huixiang: 'Hui Xiang',
+    aboutBody: 'Pocket Sutra adalah pendamping sederhana untuk melafalkan Mi Le Jiu Ku Zhen Jing (彌勒救苦真經), Sutra Hati (般若波羅蜜多心經), dan Bai Xiao Jing (百孝經). Menyajikan Hanzi, Pinyin, Lafal, dan terjemahan, dilengkapi penghitung digital dan riwayat sesi.'
   }
 };
 
@@ -350,7 +358,7 @@ function applyI18n() {
 }
 
 function applyTheme() {
-  document.querySelector('.app').dataset.theme = state.theme;
+  document.body.dataset.theme = state.theme;
   document.getElementById('themeBtn').textContent = state.theme === 'dark' ? '🌙' : '☀️';
 }
 
@@ -613,6 +621,10 @@ function init() {
 
   document.getElementById('closeLogBtn').addEventListener('click', () => closeModal('logModal'));
   document.getElementById('closeLogBtn2').addEventListener('click', () => closeModal('logModal'));
+
+  document.getElementById('menuBtn').addEventListener('click', () => openModal('menuModal'));
+  document.getElementById('closeMenuBtn').addEventListener('click', () => closeModal('menuModal'));
+  document.getElementById('closeMenuBtn2').addEventListener('click', () => closeModal('menuModal'));
 
   document.getElementById('clearLogBtn').addEventListener('click', () => {
     state.logs = [];
