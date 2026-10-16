@@ -765,6 +765,17 @@ textarea:focus {
   margin-bottom: 4px;
 }
 
+.copyright {
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
 .hx-title {
   text-align: center;
   font-family: "Noto Serif CJK SC", "SimSun", serif;
