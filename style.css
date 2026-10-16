@@ -822,6 +822,13 @@ textarea:focus {
   font-style: italic;
 }
 
+.hx-m {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
 @media (max-width: 400px) {
   .counter-value {
     font-size: 1.5rem;

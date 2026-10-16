@@ -208,46 +208,47 @@ const SUTRAS = {
 const HUIXIANG = {
   title: '迴向文',
   titlePinyin: 'Huí Xiàng Wén',
-  titleMeaning: 'Naskah Hui Xiang',
+  titleMeaningEn: 'Dedication of Merit',
+  titleMeaningId: 'Naskah Hui Xiang',
   left: [
-    { h: '弟子', l: 'Ti ce ....', note: 'sayYourName' },
-    { h: '願將', l: 'Yen ciang' },
-    { h: '誦經功德', l: 'song cing kong te' },
-    { h: '無條件', l: 'Wu thiao cien' },
-    { h: '迴向於', l: 'Hui siang yi' },
-    { h: '四大菩薩', l: 'Se ta phusa' },
-    { h: '及教化菩薩', l: 'Ci ciao hua pu sa' },
-    { h: '以增善功', l: 'Yi Cen shan kong' },
-    { h: '結佛緣', l: 'Cie fo yen' },
-    { h: '祈求', l: 'Chi chiu' },
-    { h: '搭幫助道', l: 'Ta pang cu tao' },
-    { h: '道務宏展', l: 'Tao wu hong can' },
-    { h: '峇里島', l: 'Bali tao' },
-    { h: '廣濟道場', l: 'Kuang ci tao chang' },
-    { h: '所有道親', l: 'Suo you tao chin' },
-    { h: '開智慧', l: 'Khai ce hui' },
-    { h: '發菩提心', l: 'Fa phu ti sin' }
+    { h: '弟子', l: 'Ti ce ....', note: 'sayYourName', mEn: 'Disciple', mId: 'Murid' },
+    { h: '願將', l: 'Yen ciang', mEn: 'wish to', mId: 'bermohon untuk' },
+    { h: '誦經功德', l: 'song cing kong te', mEn: 'the merit of chanting the sutra', mId: 'jasa pahala pelafalan sutra' },
+    { h: '無條件', l: 'Wu thiao cien', mEn: 'unconditionally', mId: 'tanpa syarat' },
+    { h: '迴向於', l: 'Hui siang yi', mEn: 'dedicate to', mId: 'dilimpahkan kepada' },
+    { h: '四大菩薩', l: 'Se ta phusa', mEn: 'the Four Great Bodhisattvas', mId: 'Empat Bodhisattva Agung' },
+    { h: '及教化菩薩', l: 'Ci ciao hua pu sa', mEn: 'and the enlightening Bodhisattvas', mId: 'dan para Bodhisattva pencerah' },
+    { h: '以增善功', l: 'Yi Cen shan kong', mEn: 'to increase good merit', mId: 'untuk menambah jasa kebajikan' },
+    { h: '結佛緣', l: 'Cie fo yen', mEn: 'to form Buddha-affinity', mId: 'menjalin jodoh dengan Buddha' },
+    { h: '祈求', l: 'Chi chiu', mEn: 'praying for', mId: 'memohon' },
+    { h: '搭幫助道', l: 'Ta pang cu tao', mEn: 'to help and support the Tao', mId: 'membantu perkembangan Tao' },
+    { h: '道務宏展', l: 'Tao wu hong can', mEn: 'so the Tao mission may flourish', mId: 'agar urusan Tao berkembang luas' },
+    { h: '峇里島', l: 'Bali tao', mEn: 'Bali', mId: 'Pulau Bali' },
+    { h: '廣濟道場', l: 'Kuang ci tao chang', mEn: 'the Guang Ji Tao Center', mId: 'daochang (tempat ibadah) Guang Ji' },
+    { h: '所有道親', l: 'Suo you tao chin', mEn: 'all fellow Tao practitioners', mId: 'seluruh saudara Tao' },
+    { h: '開智慧', l: 'Khai ce hui', mEn: 'to open wisdom', mId: 'membuka kebijaksanaan' },
+    { h: '發菩提心', l: 'Fa phu ti sin', mEn: 'to develop bodhicitta', mId: 'membangkitkan bodhicitta (niat pencerahan)' }
   ],
   right: [
-    { h: '團結合作', l: 'Thuan cie he cuo' },
-    { h: '同心同德', l: 'Thong Sin thong te' },
-    { h: '開創道務', l: 'Khai chuang tao wu' },
-    { h: '培育人才', l: 'Phei yi ren chai' },
-    { h: '成全道親', l: 'Chen chien tao chin' },
-    { h: '光明學園', l: 'Kuang ming sie yen' },
-    { h: '推廣素食', l: 'Thuei kuang su se' },
-    { h: '十組運作', l: 'Se cu yin cuo' },
-    { h: '順利成功', l: 'Sun Li chenkong' }
+    { h: '團結合作', l: 'Thuan cie he cuo', mEn: 'unity and cooperation', mId: 'bersatu dan bekerja sama' },
+    { h: '同心同德', l: 'Thong Sin thong te', mEn: 'one heart, one virtue', mId: 'satu hati, satu tujuan' },
+    { h: '開創道務', l: 'Khai chuang tao wu', mEn: 'to develop the Tao mission', mId: 'mengembangkan urusan Tao' },
+    { h: '培育人才', l: 'Phei yi ren chai', mEn: 'to cultivate talents', mId: 'membina sumber daya manusia' },
+    { h: '成全道親', l: 'Chen chien tao chin', mEn: 'to perfect fellow practitioners', mId: 'menyempurnakan saudara Tao' },
+    { h: '光明學園', l: 'Kuang ming sie yen', mEn: 'the Guang Ming School', mId: 'sekolah (xueyuan) Guang Ming' },
+    { h: '推廣素食', l: 'Thuei kuang su se', mEn: 'to promote vegetarianism', mId: 'mempromosikan pola makan vegetaris' },
+    { h: '十組運作', l: 'Se cu yin cuo', mEn: 'the ten working groups', mId: 'operasional sepuluh kelompok' },
+    { h: '順利成功', l: 'Sun Li chenkong', mEn: 'smooth and successful', mId: 'berjalan lancar dan berhasil' }
   ],
   closing: [
-    { h: '願以此功德', l: 'Yen yi ce kong te' },
-    { h: '莊嚴佛淨土', l: 'Cuang yen fo cin thu' },
-    { h: '上報三重恩', l: 'Sang pao Se chong en' },
-    { h: '下濟三塗苦', l: 'Sia chi san thu khu' },
-    { h: '若有見聞者', l: 'Ruo you cien wen ce' },
-    { h: '悉發菩提心', l: 'Si faphuthisin' },
-    { h: '盡此一報身', l: 'Cin ce yi pao sen' },
-    { h: '同生極樂國', l: 'Thong sen ci le kuo' }
+    { h: '願以此功德', l: 'Yen yi ce kong te', mEn: 'May the merit of this', mId: 'Semoga jasa pahala ini' },
+    { h: '莊嚴佛淨土', l: 'Cuang yen fo cin thu', mEn: 'adorn the Buddha\u2019s Pure Land', mId: 'memperindah Tanah Suci Buddha' },
+    { h: '上報三重恩', l: 'Sang pao Se chong en', mEn: 'repay the three-fold grace', mId: 'membalas tiga budi agung' },
+    { h: '下濟三塗苦', l: 'Sia chi san thu khu', mEn: 'relieve the suffering of the three lower realms', mId: 'menolong penderitaan di tiga alam rendah' },
+    { h: '若有見聞者', l: 'Ruo you cien wen ce', mEn: 'if there are any who see or hear', mId: 'bagi siapa pun yang melihat atau mendengar' },
+    { h: '悉發菩提心', l: 'Si faphuthisin', mEn: 'may they all develop bodhicitta', mId: 'semoga semuanya membangkitkan bodhicitta' },
+    { h: '盡此一報身', l: 'Cin ce yi pao sen', mEn: 'at the end of this life', mId: 'setelah kehidupan ini berakhir' },
+    { h: '同生極樂國', l: 'Thong sen ci le kuo', mEn: 'be born together in the Land of Ultimate Bliss', mId: 'bersama-sama terlahir di Tanah Sukhavati' }
   ]
 };
 
@@ -494,13 +495,17 @@ function renderAll() {
 
 function renderHuixiang() {
   const el = document.getElementById('huixiangBody');
+  const isId = state.lang === 'id';
   const item = (v) => {
     const note = v.note ? ` (${t(v.note)})` : '';
-    return `<div class="hx-item"><div class="hx-h">${escapeHtml(v.h)}</div><div class="hx-l">${escapeHtml(v.l)}${escapeHtml(note)}</div></div>`;
+    const meaning = isId ? v.mId : v.mEn;
+    const mLine = meaning ? `<div class="hx-m">${escapeHtml(meaning)}</div>` : '';
+    return `<div class="hx-item"><div class="hx-h">${escapeHtml(v.h)}</div><div class="hx-l">${escapeHtml(v.l)}${escapeHtml(note)}</div>${mLine}</div>`;
   };
+  const titleMeaning = isId ? HUIXIANG.titleMeaningId : HUIXIANG.titleMeaningEn;
   let html = '';
   html += `<div class="hx-title">${escapeHtml(HUIXIANG.title)}</div>`;
-  html += `<div class="hx-subtitle">${escapeHtml(HUIXIANG.titlePinyin)} — ${escapeHtml(HUIXIANG.titleMeaning)}</div>`;
+  html += `<div class="hx-subtitle">${escapeHtml(HUIXIANG.titlePinyin)} — ${escapeHtml(titleMeaning)}</div>`;
   html += HUIXIANG.left.map(item).join('');
   html += `<div class="hx-col">${t('rightColumn')}</div>`;
   html += HUIXIANG.right.map(item).join('');
