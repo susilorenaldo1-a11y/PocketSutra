@@ -54,30 +54,6 @@
         <span aria-hidden="true" id="autoScrollIcon">▶</span> <span data-i18n="autoScroll">Auto-Scroll</span>
       </button>
       <button class="tool-btn" id="themeBtn" aria-label="Toggle dark mode" title="Theme">🌙</button>
-      <button class="tool-btn" id="viewBtn" aria-label="Toggle view options">
-        <span aria-hidden="true">⚙</span> <span data-i18n="view">View</span>
-      </button>
-    </div>
-
-    <div class="view-panel" id="viewPanel" hidden>
-      <div class="panel-row">
-        <span class="panel-label" data-i18n="show">Show</span>
-        <div class="toggle-group">
-          <button class="chip active" data-line="hanzi" data-i18n="hanzi">Hanzi</button>
-          <button class="chip active" data-line="pinyin" data-i18n="pinyin">Pinyin</button>
-          <button class="chip active" data-line="lafal" data-i18n="lafal">Lafal</button>
-          <button class="chip active" data-line="meaning" data-i18n="meaning">Meaning</button>
-        </div>
-      </div>
-      <div class="panel-row">
-        <span class="panel-label" data-i18n="scrollSpeed">Auto-scroll speed</span>
-        <input type="range" id="speedRange" min="1" max="5" step="1" value="2" />
-        <span class="panel-value" id="speedValue">2</span>
-      </div>
-      <div class="panel-row">
-        <span class="panel-label" data-i18n="haptics">Haptic feedback</span>
-        <input type="checkbox" id="hapticToggle" checked />
-      </div>
     </div>
 
     <main class="reader" id="reader">
@@ -149,10 +125,44 @@
         <button class="close-btn" id="closeMenuBtn" aria-label="Close">✕</button>
       </div>
       <div class="modal-body menu-list">
+        <button class="menu-item" data-page="view"><span data-i18n="view">View</span></button>
         <button class="menu-item" data-page="about"><span data-i18n="about">About</span></button>
         <button class="menu-item" data-page="huixiang"><span data-i18n="huixiang">Hui Xiang</span></button>
         <button class="menu-item" data-page="changelog"><span data-i18n="changelog">Version History</span></button>
         <p class="menu-version" id="menuVersion"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- View / Display Settings Modal -->
+  <div class="modal" id="viewModal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h2 data-i18n="view">View</h2>
+        <button class="close-btn" id="closeViewBtn" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="panel-row">
+          <span class="panel-label" data-i18n="show">Show</span>
+          <div class="toggle-group">
+            <button class="chip active" data-line="hanzi" data-i18n="hanzi">Hanzi</button>
+            <button class="chip active" data-line="pinyin" data-i18n="pinyin">Pinyin</button>
+            <button class="chip active" data-line="lafal" data-i18n="lafal">Lafal</button>
+            <button class="chip active" data-line="meaning" data-i18n="meaning">Meaning</button>
+          </div>
+        </div>
+        <div class="panel-row">
+          <span class="panel-label" data-i18n="scrollSpeed">Auto-scroll speed</span>
+          <input type="range" id="speedRange" min="1" max="5" step="1" value="2" />
+          <span class="panel-value" id="speedValue">2</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-label" data-i18n="haptics">Haptic feedback</span>
+          <input type="checkbox" id="hapticToggle" checked />
+        </div>
+      </div>
+      <div class="modal-foot">
+        <button class="footer-btn" id="closeViewBtn2" data-i18n="close">Close</button>
       </div>
     </div>
   </div>
@@ -166,6 +176,7 @@
       </div>
       <div class="modal-body">
         <p class="about-text" data-i18n="aboutBody"></p>
+        <p class="about-credit">© 2026 <a href="https://anatera.co" target="_blank" rel="noopener">Anatera</a>. All rights reserved.</p>
       </div>
       <div class="modal-foot">
         <button class="footer-btn" id="closeAboutBtn2" data-i18n="close">Close</button>

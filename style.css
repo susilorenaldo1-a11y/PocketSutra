@@ -15,13 +15,13 @@
 }
 
 body[data-theme="light"] {
-  --bg: #f6f0e3;
-  --surface: #fffdf6;
-  --surface-2: #efe6cf;
-  --text: #2b2418;
-  --text-muted: #7a6c4e;
-  --border: rgba(156, 124, 31, 0.25);
-  --border-strong: rgba(156, 124, 31, 0.45);
+  --bg: #e6d8bf;
+  --surface: #f7efdd;
+  --surface-2: #dbc7a4;
+  --text: #3a2d1a;
+  --text-muted: #7d6a4c;
+  --border: rgba(107, 79, 42, 0.28);
+  --border-strong: rgba(107, 79, 42, 0.5);
   --fab-text: #2b1d05;
 }
 
@@ -733,6 +733,24 @@ textarea:focus {
   font-size: 0.9rem;
   line-height: 1.7;
   user-select: text;
+}
+
+.about-credit {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.about-credit a {
+  color: var(--gold-light);
+  text-decoration: none;
+}
+
+.about-credit a:hover {
+  text-decoration: underline;
 }
 
 .huixiang-text {

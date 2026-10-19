@@ -668,11 +668,6 @@ function init() {
     renderHuixiang();
   });
 
-  document.getElementById('viewBtn').addEventListener('click', () => {
-    const panel = document.getElementById('viewPanel');
-    panel.hidden = !panel.hidden;
-  });
-
   document.querySelectorAll('.chip').forEach((chip) => {
     chip.addEventListener('click', () => {
       const line = chip.dataset.line;
@@ -742,12 +737,15 @@ function init() {
     btn.addEventListener('click', () => {
       const page = btn.dataset.page;
       closeModal('menuModal');
-      if (page === 'about') openModal('aboutModal');
+      if (page === 'view') openModal('viewModal');
+      else if (page === 'about') openModal('aboutModal');
       else if (page === 'huixiang') openModal('huixiangModal');
       else if (page === 'changelog') openModal('changelogModal');
     });
   });
 
+  document.getElementById('closeViewBtn').addEventListener('click', () => closeModal('viewModal'));
+  document.getElementById('closeViewBtn2').addEventListener('click', () => closeModal('viewModal'));
   document.getElementById('closeAboutBtn').addEventListener('click', () => closeModal('aboutModal'));
   document.getElementById('closeAboutBtn2').addEventListener('click', () => closeModal('aboutModal'));
   document.getElementById('closeHuixiangBtn').addEventListener('click', () => closeModal('huixiangModal'));
