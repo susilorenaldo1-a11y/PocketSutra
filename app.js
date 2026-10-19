@@ -252,9 +252,20 @@ const HUIXIANG = {
   ]
 };
 
-const APP_VERSION = '1.1';
+const APP_VERSION = '1.2';
 
 const CHANGELOG = [
+  {
+    version: '1.2',
+    changes: [
+      'Menambahkan terjemahan Inggris dan Bahasa Indonesia untuk teks Hui Xiang.',
+      'Memindahkan pengaturan tampilan (View) ke dalam menu burger.',
+      'Mengganti nama tombol Heart Sutra menjadi "Xin Jing".',
+      'Menggunakan huruf kapital di awal setiap kata pinyin.',
+      'Menambahkan tautan Anatera (anatera.co) di bagian About.',
+      'Memperbarui palet light mode dengan nuansa tan ala Obi-Wan.'
+    ]
+  },
   {
     version: '1.1',
     changes: [
