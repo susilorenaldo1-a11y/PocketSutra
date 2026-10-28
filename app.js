@@ -252,9 +252,20 @@ const HUIXIANG = {
   ]
 };
 
-const APP_VERSION = '1.2';
+const APP_VERSION = '1.3';
 
 const CHANGELOG = [
+  {
+    version: '1.3',
+    changes: [
+      'Maksimalkan area baca sutra; panel kontrol (ukuran font, auto-scroll, kembali ke atas) dan penghitung kini menempel di bawah.',
+      'Menyederhanakan label baris: pembeda memakai warna dan rata kiri.',
+      'Mencegah zoom saat ketukan ganda (double-tap).',
+      'Tombol pilihan sutra diperkecil menjadi XJ, MLZJ, BXJ.',
+      'Mode terang dibuat lebih cerah (krem) dengan aksen emas yang lebih gelap agar terbaca.',
+      'Menambahkan badge jejak karbon (Website Carbon Badge).'
+    ]
+  },
   {
     version: '1.2',
     changes: [

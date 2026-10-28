@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pocket-sutra-v1';
+const CACHE_NAME = 'pocket-sutra-v2';
 const ASSETS = [
   './',
   './index.html',
