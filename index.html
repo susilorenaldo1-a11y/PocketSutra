@@ -34,27 +34,10 @@
     </header>
 
     <nav class="sutra-tabs" id="sutraTabs">
-      <button class="sutra-tab active" data-sutra="heart">
-        <span class="t-han">般若波羅蜜多心經</span><span class="t-sub">Xin Jing</span>
-      </button>
-      <button class="sutra-tab" data-sutra="mile">
-        <span class="t-han">彌勒救苦真經</span><span class="t-sub">Mi Le Jiu Ku Zhen Jing</span>
-      </button>
-      <button class="sutra-tab" data-sutra="baixiao">
-        <span class="t-han">百孝經</span><span class="t-sub">Bai Xiao Jing</span>
-      </button>
+      <button class="sutra-tab active" data-sutra="heart"><span class="t-sub">XJ</span></button>
+      <button class="sutra-tab" data-sutra="mile"><span class="t-sub">MLZJ</span></button>
+      <button class="sutra-tab" data-sutra="baixiao"><span class="t-sub">BXJ</span></button>
     </nav>
-
-    <div class="toolbar">
-      <div class="font-controls">
-        <button class="tool-btn" id="fontMinus" aria-label="Decrease font size">A−</button>
-        <button class="tool-btn" id="fontPlus" aria-label="Increase font size">A+</button>
-      </div>
-      <button class="tool-btn" id="autoScrollBtn" aria-label="Toggle auto-scroll">
-        <span aria-hidden="true" id="autoScrollIcon">▶</span> <span data-i18n="autoScroll">Auto-Scroll</span>
-      </button>
-      <button class="tool-btn" id="themeBtn" aria-label="Toggle dark mode" title="Theme">🌙</button>
-    </div>
 
     <main class="reader" id="reader">
       <h2 id="sutraTitle" class="sutra-title"></h2>
@@ -63,8 +46,14 @@
     </main>
 
     <footer class="bottom-nav">
+      <div class="bn-tools">
+        <button class="bn-tool" id="fontMinus" aria-label="Decrease font size">A−</button>
+        <button class="bn-tool" id="fontPlus" aria-label="Increase font size">A+</button>
+        <button class="bn-tool" id="autoScrollBtn" aria-label="Toggle auto-scroll"><span id="autoScrollIcon">▶</span></button>
+        <button class="bn-tool" id="toTopBtn" aria-label="Back to top">↑</button>
+        <button class="bn-tool" id="themeBtn" aria-label="Toggle theme" title="Theme">🌙</button>
+      </div>
       <div class="counter-display">
-        <span class="counter-label" data-i18n="counter">Counter</span>
         <span class="counter-value" id="counterValue">000</span>
         <div class="counter-mini">
           <button class="mini-btn" id="undoBtn" data-i18n="undo" title="Undo">Undo</button>

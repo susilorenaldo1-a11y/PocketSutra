@@ -489,10 +489,10 @@ function renderSutra() {
   body.style.fontSize = state.fontSize + 'px';
 
   body.innerHTML = data.verses.map((v) => {
-    const hanzi = state.showHanzi && v.h ? `<div class="ln hanzi"><span class="lbl">${t('hanzi')}</span>${escapeHtml(v.h)}</div>` : '';
-    const pinyin = state.showPinyin && v.p ? `<div class="ln pinyin"><span class="lbl">${t('pinyin')}</span>${escapeHtml(v.p)}</div>` : '';
-    const lafal = state.showLafal && v.l ? `<div class="ln lafal"><span class="lbl">${t('lafal')}</span>${escapeHtml(v.l)}</div>` : '';
-    const meaning = state.showMeaning && v.m ? `<div class="ln meaning"><span class="lbl">${t('meaning')}</span>${escapeHtml(v.m)}</div>` : '';
+    const hanzi = state.showHanzi && v.h ? `<div class="ln hanzi">${escapeHtml(v.h)}</div>` : '';
+    const pinyin = state.showPinyin && v.p ? `<div class="ln pinyin">${escapeHtml(v.p)}</div>` : '';
+    const lafal = state.showLafal && v.l ? `<div class="ln lafal">${escapeHtml(v.l)}</div>` : '';
+    const meaning = state.showMeaning && v.m ? `<div class="ln meaning">${escapeHtml(v.m)}</div>` : '';
     return `<div class="verse">${hanzi}${pinyin}${lafal}${meaning}</div>`;
   }).join('');
 }
@@ -708,6 +708,10 @@ function init() {
     else startAutoScroll();
   });
 
+  document.getElementById('toTopBtn').addEventListener('click', () => {
+    document.getElementById('reader').scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
   document.getElementById('saveSessionBtn').addEventListener('click', () => {
     if (currentCount() === 0) return;
     document.getElementById('saveValue').textContent = currentCount();
@@ -780,6 +784,13 @@ function init() {
 }
 
 document.addEventListener('DOMContentLoaded', init);
+
+/* Prevent double-tap / double-click zoom */
+document.addEventListener('dblclick', (e) => e.preventDefault());
+document.addEventListener('gesturestart', (e) => e.preventDefault());
+document.addEventListener('touchmove', (e) => {
+  if (e.touches && e.touches.length > 1) e.preventDefault();
+}, { passive: false });
 
 /* PWA: service worker registration */
 if ('serviceWorker' in navigator) {
