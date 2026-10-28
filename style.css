@@ -711,6 +711,12 @@ textarea:focus {
   text-decoration: underline;
 }
 
+.carbonbadge {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
 .huixiang-text {
   color: var(--text);
   font-size: 0.95rem;
